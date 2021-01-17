@@ -4,13 +4,12 @@ const empties = document.querySelectorAll('.empty');
 
 fill.addEventListener('dragstart', dragStart);
 fill.addEventListener('dragend', dragEnd);
-fill.addEventListener('dragdrop', dragDrop);
 
 for (const empty of empties) {
-    fill.addEventListener('dragover', dragOver);
-    fill.addEventListener('dragenter', dragEnter);
-    fill.addEventListener('dragleave', dragLeave);
-    fill.addEventListener('drop', dragDrop);
+    empty.addEventListener('dragover', dragOver);
+    empty.addEventListener('dragenter', dragEnter);
+    empty.addEventListener('dragleave', dragLeave);
+    empty.addEventListener('drop', dragDrop);
 
 }
 
@@ -25,11 +24,11 @@ function dragEnd() {
 } 
 
 function dragOver(e) {
-    e.prevendDefault();
+    e.preventDefault();
 }
 
-function dragEnter() {
-    e.prevendDefault();
+function dragEnter(e) {
+    e.preventDefault();
 }
 
 function dragLeave() {
