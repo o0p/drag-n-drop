@@ -24,18 +24,19 @@ function dragEnd() {
     this.className = 'fill';
 } 
 
-function dragOver() {
-
+function dragOver(e) {
+    e.prevendDefault();
 }
 
 function dragEnter() {
-
+    e.prevendDefault();
 }
 
 function dragLeave() {
 
 }
 
-function dragDrop() {
-
+function dragDrop(e) {
+    this.className = 'empty';
+    this.append(fill);
 }
