@@ -1,3 +1,6 @@
+const fill = document.querySelector('.fill');
+const filemptiesl = document.querySelectorAll('.empty');
+
 function dragStart() {
     
 }
