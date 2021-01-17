@@ -16,14 +16,12 @@ for (const empty of empties) {
 
 function dragStart() {
     this.className = this.className + ' hold';
-    setTimeout(() => {
-        this.className = this.className + 'invisible';        
-    }, 0);
+    setTimeout(() => this.className = 'invisible', 0);
     
 }
 
 function dragEnd() {
-
+    this.className = 'fill';
 } 
 
 function dragOver() {
