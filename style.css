@@ -20,6 +20,13 @@ body {
     background: #fff;
 }
 
+.fill {
+    background-image: url('https://source.unsplash.com/random/150x150');
+    height: 9.0625rem;
+    width: 9.0625rem;
+    cursor: pointer;
+}
+
 
 @media (max-width: 800px) {
     body {
