@@ -11,3 +11,10 @@ body {
     margin: 0;
     background-color: steelblue;
 }
+
+
+@media (max-width: 800) {
+    body {
+        flex-direction: column;
+    }
+}
